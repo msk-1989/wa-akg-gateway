@@ -5,9 +5,14 @@ import type { NextRequest } from "next/server";
 export async function proxy(request: NextRequest) {
     let { pathname } = request.nextUrl;
 
+    // Fix the x-forwarded-host mismatch: the gateway proxy sends its internal
+    // hostname as x-forwarded-host, but the browser's origin header is the public
+    // URL. Next.js 16 Server Actions CSRF check fails when these don't match.
+    // Override x-forwarded-host to match the origin so Server Actions work.
+    const origin = request.headers.get("origin");
+    const responseHeaders = new Headers();
+
     // Strip trailing slash to prevent redirect loop with gateway proxy
-    // (the gateway adds trailing slashes, Next.js skips redirect with skipTrailingSlashRedirect)
-    // We rewrite internally so Next.js routes to the right page
     let cleanUrl: URL | null = null;
     if (pathname.length > 1 && pathname.endsWith("/")) {
         cleanUrl = request.nextUrl.clone();
@@ -16,7 +21,17 @@ export async function proxy(request: NextRequest) {
     }
 
     // Helper: return rewrite if we stripped a slash, otherwise next
-    const pass = () => cleanUrl ? NextResponse.rewrite(cleanUrl) : NextResponse.next();
+    const pass = () => {
+        const res = cleanUrl ? NextResponse.rewrite(cleanUrl) : NextResponse.next();
+        // Override forwarded host to match origin for Server Actions CSRF
+        if (origin) {
+            try {
+                const originHost = new URL(origin).host;
+                res.headers.set("x-forwarded-host", originHost);
+            } catch {}
+        }
+        return res;
+    };
 
     // Public routes that don't require authentication
     const publicRoutes = ["/auth/login", "/auth/register", "/api/auth", "/api/test", "/terms", "/privacy"];

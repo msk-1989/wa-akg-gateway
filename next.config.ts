@@ -21,6 +21,15 @@ const nextConfig: NextConfig = {
   },
   allowedDevOrigins: ["preview-chat-35feda42-934c-4eb6-8dda-d70a411c348a.space-z.ai"],
   skipTrailingSlashRedirect: true,
+  experimental: {
+    serverActions: {
+      allowedOrigins: [
+        "preview-chat-35feda42-934c-4eb6-8dda-d70a411c348a.space-z.ai",
+        "localhost:3000",
+        "127.0.0.1:3000",
+      ],
+    },
+  },
 };
 
 export default nextConfig;
