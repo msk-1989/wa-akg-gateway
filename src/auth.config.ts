@@ -8,26 +8,32 @@ export const authConfig = {
         authorized({ auth, request: { nextUrl } }) {
             const isLoggedIn = !!auth?.user;
             const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
-            
+
             if (isOnDashboard) {
                 if (isLoggedIn) return true;
-                return false; // Redirect unauthenticated users to login page
+                return false;
             } else if (isLoggedIn && nextUrl.pathname === '/auth/login') {
                 return Response.redirect(new URL('/dashboard', nextUrl));
             }
             return true;
         },
-        async jwt({ token, user }) {
+        async jwt({ token, user }: any) {
+            // Only set on initial sign-in
             if (user) {
                 token.id = user.id;
-                token.role = (user as any).role;
+                token.role = user.role;
             }
             return token;
         },
-        async session({ session, token }) {
-            if (token && session.user) {
-                session.user.id = token.id as string;
-                (session.user as any).role = token.role;
+        async session({ session, token }: any) {
+            // Safely extend session.user — never throw here or the response is empty
+            try {
+                if (token && session?.user) {
+                    (session.user as any).id = token.id as string;
+                    (session.user as any).role = token.role;
+                }
+            } catch (e) {
+                console.error("[auth] session callback error:", e);
             }
             return session;
         }
