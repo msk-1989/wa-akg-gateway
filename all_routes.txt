@@ -1,0 +1,135 @@
+POST /api/contacts/[sessionId]/[jid]/block
+POST /api/contacts/[sessionId]/[jid]/unblock
+GET /api/contacts/[sessionId]
+POST /api/contacts/block [DEPRECATED]
+POST /api/contacts/unblock [DEPRECATED]
+GET /api/contacts [DEPRECATED]
+GET /api/docs
+POST /api/groups/[sessionId]/create
+POST /api/groups/[sessionId]/invite/accept
+GET /api/groups/[sessionId]/[jid]/invite
+PUT /api/groups/[sessionId]/[jid]/invite
+POST /api/groups/[sessionId]/[jid]/leave
+PUT /api/groups/[sessionId]/[jid]/members
+DELETE /api/groups/[sessionId]/[jid]/picture
+PUT /api/groups/[sessionId]/[jid]/picture
+PUT /api/groups/[sessionId]/[jid]/settings
+PUT /api/groups/[sessionId]/[jid]/subject
+PUT /api/groups/[sessionId]/[jid]/description
+PUT /api/groups/[sessionId]/[jid]/ephemeral
+GET /api/groups/[sessionId]/[jid]
+GET /api/groups/[sessionId]
+POST /api/groups/create [DEPRECATED]
+POST /api/groups/invite/accept [DEPRECATED]
+GET /api/groups [DEPRECATED]
+GET /api/labels/[sessionId]/chat/[jid]/labels
+PUT /api/labels/[sessionId]/chat/[jid]/labels
+PUT /api/labels/[sessionId]/[labelId]
+DELETE /api/labels/[sessionId]/[labelId]
+GET /api/labels/[sessionId]
+POST /api/labels/[sessionId]
+PUT /api/labels/[sessionId]
+DELETE /api/labels/[sessionId]
+GET /api/labels/chat-labels [DEPRECATED]
+PUT /api/labels/chat-labels [DEPRECATED]
+GET /api/labels [DEPRECATED]
+POST /api/labels [DEPRECATED]
+GET /api/media/[filename]
+POST /api/messages/[sessionId]/[jid]/[messageId]/react
+DELETE /api/messages/[sessionId]/[jid]/[messageId]
+POST /api/messages/[sessionId]/[jid]/contact
+POST /api/messages/[sessionId]/[jid]/list
+POST /api/messages/[sessionId]/[jid]/location
+POST /api/messages/[sessionId]/[jid]/poll
+POST /api/messages/[sessionId]/[jid]/spam
+POST /api/messages/[sessionId]/[jid]/sticker
+POST /api/messages/[sessionId]/broadcast
+GET /api/messages/[sessionId]/download/[messageId]/media
+POST /api/messages/[sessionId]/forward
+POST /api/messages/broadcast [DEPRECATED]
+POST /api/messages/contact [DEPRECATED]
+DELETE /api/messages/delete [DEPRECATED]
+POST /api/messages/forward [DEPRECATED]
+POST /api/messages/list [DEPRECATED]
+POST /api/messages/location [DEPRECATED]
+POST /api/messages/poll [DEPRECATED]
+POST /api/messages/react [DEPRECATED]
+POST /api/messages/spam [DEPRECATED]
+POST /api/messages/sticker [DEPRECATED]
+DELETE /api/notifications/delete
+PATCH /api/notifications/read
+GET /api/notifications
+POST /api/notifications
+PUT /api/profile/[sessionId]/name
+PUT /api/profile/[sessionId]/picture
+DELETE /api/profile/[sessionId]/picture
+PUT /api/profile/[sessionId]/status
+GET /api/profile/[sessionId]
+PUT /api/profile/name [DEPRECATED]
+PUT /api/profile/picture [DEPRECATED]
+DELETE /api/profile/picture [DEPRECATED]
+GET /api/profile [DEPRECATED]
+PUT /api/profile/status [DEPRECATED]
+GET /api/scheduler/[sessionId]
+POST /api/scheduler/[sessionId]
+DELETE /api/scheduler/[sessionId]
+DELETE /api/scheduler/[sessionId]/[scheduleId]
+GET /api/scheduler [DEPRECATED]
+POST /api/scheduler [DEPRECATED]
+POST /api/sessions/[id]/[action]
+GET /api/sessions/[id]/bot-config
+POST /api/sessions/[id]/bot-config
+GET /api/sessions/[id]/qr
+PATCH /api/sessions/[id]/settings
+DELETE /api/sessions/[id]/settings
+GET /api/sessions/[id]
+GET /api/sessions
+POST /api/sessions
+GET /api/settings/system
+POST /api/settings/system
+POST /api/status/[sessionId]/update
+POST /api/status/update [DEPRECATED]
+POST /api/system/check-updates
+GET /api/user/api-key
+POST /api/user/api-key
+DELETE /api/user/api-key
+PATCH /api/users/[id]
+DELETE /api/users/[id]
+GET /api/users
+POST /api/users
+GET /api/webhooks/[sessionId]
+POST /api/webhooks/[sessionId]
+PUT /api/webhooks/[sessionId]/[id]
+DELETE /api/webhooks/[sessionId]/[id]
+GET /api/webhooks [DEPRECATED]
+POST /api/webhooks [DEPRECATED]
+GET /api/auth/[...nextauth]
+POST /api/auth/[...nextauth]
+GET /api/autoreplies/[sessionId]
+POST /api/autoreplies/[sessionId]
+DELETE /api/autoreplies/[sessionId]
+DELETE /api/autoreplies/[sessionId]/[replyId]
+GET /api/autoreplies [DEPRECATED]
+POST /api/autoreplies [DEPRECATED]
+POST /api/chat/[sessionId]/[jid]/archive
+PUT /api/chat/[sessionId]/[jid]/mute
+PUT /api/chat/[sessionId]/[jid]/pin
+POST /api/chat/[sessionId]/[jid]/presence
+POST /api/chat/[sessionId]/[jid]/profile-picture
+PUT /api/chat/[sessionId]/[jid]/read
+GET /api/chat/[sessionId]/[jid]
+POST /api/chat/[sessionId]/check
+GET /api/chat/[sessionId]
+POST /api/chat/[sessionId]/send [DEPRECATED]
+PUT /api/chat/archive [DEPRECATED]
+POST /api/chat/check [DEPRECATED]
+PUT /api/chat/mute [DEPRECATED]
+PUT /api/chat/pin [DEPRECATED]
+POST /api/chat/presence [DEPRECATED]
+POST /api/chat/profile-picture [DEPRECATED]
+PUT /api/chat/read [DEPRECATED]
+POST /api/chat/send [DEPRECATED]
+GET /api/chats/[sessionId]/by-label/[labelId]
+GET /api/chats/by-label/[labelId] [DEPRECATED]
+
+Total Endpoints: 111
