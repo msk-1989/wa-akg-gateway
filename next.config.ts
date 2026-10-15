@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
     root: path.resolve(__dirname),
   },
   allowedDevOrigins: ["preview-chat-35feda42-934c-4eb6-8dda-d70a411c348a.space-z.ai"],
+  skipTrailingSlashRedirect: true,
 };
 
 export default nextConfig;
