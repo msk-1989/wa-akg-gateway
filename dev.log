@@ -560,3 +560,40 @@ Error handling upgrade request Error: Invariant: did not expect response writer 
 Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
     at ignore-listed frames
 [90m12:47:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:17:38.634Z...[0m
+ GET / 200 in 83ms (compile: 2ms, proxy.ts: 5ms, render: 75ms)
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:48:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:18:08.636Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:48:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:18:38.637Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:49:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:19:08.641Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:49:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:19:38.643Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+ GET / 200 in 81ms (compile: 4ms, proxy.ts: 5ms, render: 72ms)
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:50:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:20:08.644Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:50:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:20:38.648Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:51:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:21:08.651Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:51:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:21:38.655Z...[0m
+Error handling upgrade request Error: Invariant: did not expect response writer to be written to for upgrade request
+    at ignore-listed frames
+[90m12:52:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:22:08.658Z...[0m
+[90m12:52:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:22:38.659Z...[0m
+[90m12:53:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T07:23:08.661Z...[0m
