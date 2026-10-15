@@ -1,0 +1,52 @@
+# Render Blueprint for WA-AKG
+# Docs: https://render.com/docs/blueprint-spec
+# Create a new Web Service using this file at: https://dashboard.render.com/select-repo
+
+services:
+  - type: web
+    name: wa-akg-gateway
+    runtime: docker
+    plan: starter  # $7/mo — needed for persistent process + WebSocket support
+    dockerfilePath: ./Dockerfile.prod
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: HOSTNAME
+        value: 0.0.0.0
+      - key: DATABASE_URL
+        sync: false  # Set this manually — your Neon pooled connection string
+      - key: DIRECT_URL
+        sync: false  # Set this manually — your Neon direct connection string
+      - key: AUTH_SECRET
+        sync: false  # Set this manually — generate with: openssl rand -base64 32
+      - key: NEXTAUTH_URL
+        sync: false  # Set this manually — your Render URL (https://wa-akg.onrender.com)
+      - key: ADMIN_EMAIL
+        sync: false  # Set this manually
+      - key: ADMIN_PASSWORD
+        sync: false  # Set this manually
+      - key: TZ
+        value: Asia/Kolkata
+      - key: LOCALE
+        value: en-IN
+      - key: MEDIA_STORAGE_PATH
+        value: uploads
+      - key: BAILEYS_LOG_LEVEL
+        value: error
+      - key: ENABLE_NOTIFICATIONS
+        value: true
+      - key: ENABLE_AUTO_UPDATE_CHECK
+        value: false
+      - key: ENABLE_RATE_LIMITING
+        value: true
+      - key: RATE_LIMIT_PER_MINUTE
+        value: 60
+      - key: MAX_UPLOAD_SIZE_MB
+        value: 50
+      - key: SESSION_TIMEOUT_HOURS
+        value: 24

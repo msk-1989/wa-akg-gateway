@@ -1,0 +1,47 @@
+# Fly.io configuration for WA-AKG
+# Docs: https://fly.io/docs/reference/configuration/
+
+app = "wa-akg-gateway"  # Change to your app name
+primary_region = "sin"   # Singapore — closest to India with low latency
+
+[build]
+  dockerfile = "Dockerfile.prod"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false  # MUST be false — Baileys needs always-on connection
+  auto_start_machines = false
+  min_machines_running = 1    # Always keep at least 1 machine running
+
+[http_service.concurrency]
+  type = "requests"
+  hard_limit = 250
+  soft_limit = 200
+
+[[vm]]
+  size = "shared-cpu-1x"   # 256MB RAM — sufficient for 1-3 WhatsApp sessions
+  memory = "512mb"          # Upgrade if running many sessions
+
+[env]
+  NODE_ENV = "production"
+  PORT = "3000"
+  HOSTNAME = "0.0.0.0"
+  TZ = "Asia/Kolkata"
+  LOCALE = "en-IN"
+  MEDIA_STORAGE_PATH = "uploads"
+  BAILEYS_LOG_LEVEL = "error"
+  ENABLE_NOTIFICATIONS = "true"
+  ENABLE_AUTO_UPDATE_CHECK = "false"
+  ENABLE_RATE_LIMITING = "true"
+  RATE_LIMIT_PER_MINUTE = "60"
+  MAX_UPLOAD_SIZE_MB = "50"
+  SESSION_TIMEOUT_HOURS = "24"
+
+# Set these secrets via: fly secrets set DATABASE_URL="..." AUTH_SECRET="..." etc.
+# DATABASE_URL      — Neon pooled connection string
+# DIRECT_URL        — Neon direct connection string
+# AUTH_SECRET       — generate with: openssl rand -base64 32
+# NEXTAUTH_URL      — your Fly URL (https://wa-akg-gateway.fly.dev)
+# ADMIN_EMAIL       — admin email
+# ADMIN_PASSWORD    — admin password

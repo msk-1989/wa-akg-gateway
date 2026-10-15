@@ -1,0 +1,25 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommands": [
+      "cp prisma/schema.postgres.prisma prisma/schema.prisma",
+      "npm ci --legacy-peer-deps",
+      "npx prisma generate"
+    ]
+  },
+  "deploy": {
+    "startCommand": "npx prisma db push && node scripts/setup-admin.js \"$ADMIN_EMAIL\" \"$ADMIN_PASSWORD\" && node node_modules/tsx/dist/cli.mjs src/server/index.ts",
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 30,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 3
+  },
+  "environments": {
+    "production": {
+      "NODE_ENV": "production",
+      "PORT": "3000",
+      "HOSTNAME": "0.0.0.0"
+    }
+  }
+}
