@@ -33,3 +33,221 @@ $ next dev -p 3000
  GET /api/auth/session 200 in 19ms (compile: 4ms, proxy.ts: 3ms, render: 12ms)
 ○ Compiling /dashboard ...
  GET /dashboard/ 200 in 5.0s (compile: 4.3s, proxy.ts: 71ms, render: 582ms)
+ GET / 200 in 75ms (compile: 3ms, proxy.ts: 8ms, render: 64ms)
+[90m19:36:33[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+ POST /api/messages/MultiNex/917588828027%40s.whatsapp.net/send 401 in 1198ms (compile: 1176ms, proxy.ts: 3ms, render: 19ms)
+ POST /api/messages/pqtsho/917588828027%40s.whatsapp.net/send 401 in 40ms (compile: 27ms, proxy.ts: 4ms, render: 9ms)
+[90m19:36:35[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+[90m19:36:37[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:06:37.210Z...[0m
+[31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[31m[auth][cause][0m: Error: no matching decryption secret
+    at clockTolerance (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_e9fe03cd._.js:915:15)
+    at async flattenedDecrypt (/home/z/my-project/.next/dev/server/chunks/node_modules_jose_dist_webapi_aad497e4._.js:3329:15)
+    at async compactDecrypt (/home/z/my-project/.next/dev/server/chunks/node_modules_jose_dist_webapi_aad497e4._.js:3425:23)
+    at async jwtDecrypt (/home/z/my-project/.next/dev/server/chunks/node_modules_jose_dist_webapi_aad497e4._.js:3459:23)
+    at async Object.decode (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_e9fe03cd._.js:905:25)
+    at async Module.session (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_e9fe03cd._.js:4546:29)
+    at async AuthInternal (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_e9fe03cd._.js:5131:24)
+    at async Auth (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_e9fe03cd._.js:5370:34)
+    at async proxy (/home/z/my-project/.next/dev/server/chunks/[root-of-the-server]__97313559._.js:342:25)
+    at async /home/z/my-project/.next/dev/server/chunks/node_modules_next_75025154._.js:14655:20
+    at async /home/z/my-project/.next/dev/server/chunks/node_modules_next_75025154._.js:6951:28
+    at async adapter (/home/z/my-project/.next/dev/server/chunks/node_modules_next_75025154._.js:6906:16)
+    at async DevServer.runMiddleware (/home/z/my-project/node_modules/next/dist/server/next-server.js:1232:26)
+    at async DevServer.runMiddleware (/home/z/my-project/node_modules/next/dist/server/dev/next-dev-server.js:278:28)
+    at async NextNodeServer.handleCatchallMiddlewareRequest (/home/z/my-project/node_modules/next/dist/server/next-server.js:449:26)
+    at async DevServer.handleRequestImpl (/home/z/my-project/node_modules/next/dist/server/base-server.js:915:28)
+    at async /home/z/my-project/node_modules/next/dist/server/dev/next-dev-server.js:387:20
+    at async Span.traceAsyncFn (/home/z/my-project/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/z/my-project/node_modules/next/dist/server/dev/next-dev-server.js:383:24)
+    at async handleRoute (/home/z/my-project/node_modules/next/dist/server/lib/router-utils/resolve-routes.js:333:33)
+    at async resolveRoutes (/home/z/my-project/node_modules/next/dist/server/lib/router-utils/resolve-routes.js:593:28)
+    at async handleRequest (/home/z/my-project/node_modules/next/dist/server/lib/router-server.js:296:96)
+    at async requestHandlerImpl (/home/z/my-project/node_modules/next/dist/server/lib/router-server.js:496:13)
+    at async Server.requestListener (/home/z/my-project/node_modules/next/dist/server/lib/start-server.js:226:13)
+[31m[auth][details][0m: {}
+ GET /auth/login?callbackUrl=%2Fdashboard%2Fsessions 200 in 55ms (compile: 3ms, proxy.ts: 9ms, render: 42ms)
+[31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[31m[auth][cause][0m: Error: no matching decryption secret
+    at clockTolerance (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_36df0127._.js:915:15)
+    at async flattenedDecrypt (/home/z/my-project/.next/dev/server/chunks/node_modules_jose_dist_webapi_868b124b._.js:3329:15)
+    at async compactDecrypt (/home/z/my-project/.next/dev/server/chunks/node_modules_jose_dist_webapi_868b124b._.js:3425:23)
+    at async jwtDecrypt (/home/z/my-project/.next/dev/server/chunks/node_modules_jose_dist_webapi_868b124b._.js:3459:23)
+    at async Object.decode (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_36df0127._.js:905:25)
+    at async Module.session (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_36df0127._.js:4546:29)
+    at async AuthInternal (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_36df0127._.js:5131:24)
+    at async Auth (/home/z/my-project/.next/dev/server/chunks/node_modules_@auth_core_36df0127._.js:5370:34)
+    at async safeHandler (/home/z/my-project/.next/dev/server/chunks/[root-of-the-server]__d5da0ab3._.js:252:21)
+    at async AppRouteRouteModule.do (/home/z/my-project/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:37866)
+    at async AppRouteRouteModule.handle (/home/z/my-project/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45156)
+    at async responseGenerator (/home/z/my-project/.next/dev/server/chunks/node_modules_next_417193d9._.js:16653:38)
+    at async AppRouteRouteModule.handleResponse (/home/z/my-project/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187713)
+    at async handleResponse (/home/z/my-project/.next/dev/server/chunks/node_modules_next_417193d9._.js:16716:32)
+    at async Module.handler (/home/z/my-project/.next/dev/server/chunks/node_modules_next_417193d9._.js:16769:13)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/z/my-project/node_modules/next/dist/server/base-server.js:1422:9)
+    at async DevServer.renderPageComponent (/home/z/my-project/node_modules/next/dist/server/base-server.js:1474:24)
+    at async DevServer.renderToResponseImpl (/home/z/my-project/node_modules/next/dist/server/base-server.js:1524:32)
+    at async DevServer.pipeImpl (/home/z/my-project/node_modules/next/dist/server/base-server.js:1018:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/z/my-project/node_modules/next/dist/server/next-server.js:395:17)
+    at async DevServer.handleRequestImpl (/home/z/my-project/node_modules/next/dist/server/base-server.js:909:17)
+    at async /home/z/my-project/node_modules/next/dist/server/dev/next-dev-server.js:387:20
+    at async Span.traceAsyncFn (/home/z/my-project/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/z/my-project/node_modules/next/dist/server/dev/next-dev-server.js:383:24)
+    at async invokeRender (/home/z/my-project/node_modules/next/dist/server/lib/router-server.js:248:21)
+    at async handleRequest (/home/z/my-project/node_modules/next/dist/server/lib/router-server.js:447:24)
+    at async requestHandlerImpl (/home/z/my-project/node_modules/next/dist/server/lib/router-server.js:496:13)
+    at async Server.requestListener (/home/z/my-project/node_modules/next/dist/server/lib/start-server.js:226:13)
+[31m[auth][details][0m: {}
+ GET /api/auth/session 200 in 41ms (compile: 31ms, proxy.ts: 3ms, render: 8ms)
+ GET /api/auth/session 200 in 16ms (compile: 8ms, proxy.ts: 5ms, render: 4ms)
+ GET /auth/login?callbackUrl=%2Ficon 200 in 46ms (compile: 3ms, proxy.ts: 5ms, render: 38ms)
+[90m19:37:07[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:07:07.211Z...[0m
+ GET / 200 in 75ms (compile: 3ms, proxy.ts: 6ms, render: 66ms)
+ GET /api/auth/providers 200 in 34ms (compile: 25ms, proxy.ts: 3ms, render: 6ms)
+ GET /api/auth/csrf 200 in 14ms (compile: 7ms, proxy.ts: 3ms, render: 4ms)
+ POST /api/auth/callback/credentials? 200 in 86ms (compile: 3ms, proxy.ts: 3ms, render: 80ms)
+ GET /api/auth/session 200 in 39ms (compile: 24ms, proxy.ts: 3ms, render: 12ms)
+ GET /dashboard/ 200 in 334ms (compile: 10ms, proxy.ts: 18ms, render: 306ms)
+ GET /dashboard/sessions 200 in 1498ms (compile: 1310ms, proxy.ts: 11ms, render: 177ms)
+ GET /api/auth/session 200 in 99ms (compile: 62ms, proxy.ts: 9ms, render: 29ms)
+[90m19:37:29[0m [41m[37m[1m ERR! [0m [1m[36m[GitHub][0m [31mAPI Error: 403 rate limit exceeded - {"message":"API rate limit exceeded for 8.212.10.159. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+[0m
+ POST /api/system/check-updates 200 in 788ms (compile: 598ms, proxy.ts: 24ms, render: 166ms)
+ GET /api/settings/system 200 in 1006ms (compile: 904ms, proxy.ts: 27ms, render: 74ms)
+ GET /api/sessions 200 in 1309ms (compile: 1161ms, proxy.ts: 29ms, render: 118ms)
+ GET /api/auth/session 200 in 186ms (compile: 66ms, proxy.ts: 13ms, render: 107ms)
+ GET /api/notifications 200 in 1636ms (compile: 1584ms, proxy.ts: 29ms, render: 23ms)
+ GET /api/sessions 200 in 63ms (compile: 5ms, proxy.ts: 16ms, render: 42ms)
+ GET /icon?2ab3d9d3fc9d921 200 in 1733ms (compile: 1516ms, proxy.ts: 33ms, render: 183ms)
+ GET /api/notifications 200 in 338ms (compile: 10ms, proxy.ts: 316ms, render: 12ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mc84u2o4 404 in 1178ms (compile: 1009ms, proxy.ts: 62ms, render: 107ms)
+ GET /api/socket/io?EIO=4&transport=polling&t=mc7xqtpd 404 in 2.0s (compile: 1901ms, proxy.ts: 27ms, render: 94ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mcasbs47 404 in 44ms (compile: 5ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/socket/io?EIO=4&transport=polling&t=mcau5e8y 404 in 51ms (compile: 4ms, proxy.ts: 8ms, render: 39ms)
+ GET /api/socket/io?EIO=4&transport=polling&t=mccceukz 404 in 47ms (compile: 5ms, proxy.ts: 10ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mccrf2s9 404 in 47ms (compile: 5ms, proxy.ts: 10ms, render: 33ms)
+[90m19:37:37[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:07:37.212Z...[0m
+ GET /api/socket/io?EIO=4&transport=polling&t=mcf6zihg 404 in 43ms (compile: 5ms, proxy.ts: 9ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mcgsgfhd 404 in 53ms (compile: 7ms, proxy.ts: 10ms, render: 36ms)
+ GET /api/socket/io?EIO=4&transport=polling&t=mcj7r6st 404 in 105ms (compile: 18ms, proxy.ts: 13ms, render: 75ms)
+ GET /dashboard/settings 200 in 1297ms (compile: 1071ms, proxy.ts: 10ms, render: 216ms)
+ GET /api/auth/session 200 in 172ms (compile: 105ms, proxy.ts: 29ms, render: 37ms)
+ GET /api/notifications 200 in 226ms (compile: 80ms, proxy.ts: 75ms, render: 71ms)
+ GET /api/settings/system 200 in 226ms (compile: 73ms, proxy.ts: 73ms, render: 80ms)
+ GET /api/sessions 200 in 248ms (compile: 144ms, proxy.ts: 84ms, render: 20ms)
+[90m19:37:47[0m [41m[37m[1m ERR! [0m [1m[36m[GitHub][0m [31mAPI Error: 403 rate limit exceeded - {"message":"API rate limit exceeded for 8.212.10.159. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+[0m
+ POST /api/system/check-updates 200 in 346ms (compile: 37ms, proxy.ts: 75ms, render: 233ms)
+ GET /api/settings/system 200 in 59ms (compile: 5ms, proxy.ts: 36ms, render: 17ms)
+ GET /api/auth/session 200 in 156ms (compile: 55ms, proxy.ts: 16ms, render: 85ms)
+ GET /api/notifications 200 in 212ms (compile: 30ms, proxy.ts: 99ms, render: 83ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mcm6nh44 404 in 214ms (compile: 67ms, proxy.ts: 101ms, render: 47ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mcn7dv0c 404 in 55ms (compile: 7ms, proxy.ts: 9ms, render: 38ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mcp72dw8 404 in 75ms (compile: 6ms, proxy.ts: 21ms, render: 49ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mcrq5gbe 404 in 52ms (compile: 5ms, proxy.ts: 8ms, render: 39ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mcvrqtwo 404 in 41ms (compile: 4ms, proxy.ts: 8ms, render: 28ms)
+ POST /api/settings/system 200 in 21ms (compile: 2ms, proxy.ts: 8ms, render: 11ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mczsn28z 404 in 42ms (compile: 4ms, proxy.ts: 9ms, render: 28ms)
+[90m19:38:07[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:08:07.213Z...[0m
+ GET /dashboard/ 200 in 53ms (compile: 3ms, proxy.ts: 14ms, render: 36ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=md3trqsf 404 in 52ms (compile: 5ms, proxy.ts: 7ms, render: 41ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=md7v6545 404 in 41ms (compile: 4ms, proxy.ts: 8ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mdcu2bxf 404 in 40ms (compile: 5ms, proxy.ts: 8ms, render: 27ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mdhh0tyo 404 in 64ms (compile: 10ms, proxy.ts: 17ms, render: 37ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mdm3nth7 404 in 52ms (compile: 7ms, proxy.ts: 9ms, render: 35ms)
+[90m19:38:37[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:08:37.214Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=mdqqbpjp 404 in 51ms (compile: 8ms, proxy.ts: 10ms, render: 34ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mdvcth8y 404 in 48ms (compile: 6ms, proxy.ts: 10ms, render: 32ms)
+ GET /api/messages/pqtsho/917588828027@s.whatsapp.net/send 405 in 46ms (compile: 36ms, proxy.ts: 5ms, render: 5ms)
+ GET /api/wa/messages/pqtsho/917588828027@s.whatsapp.net/send 404 in 40ms (compile: 5ms, proxy.ts: 3ms, render: 32ms)
+ GET /api/wa/sessions/pqtsho/917588828027@s.whatsapp.net/send 404 in 100ms (compile: 6ms, proxy.ts: 6ms, render: 88ms)
+[90m19:38:47[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+[90m19:38:48[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+ GET /api/sessions/pqtsho/send 405 in 1210ms (compile: 1193ms, proxy.ts: 3ms, render: 13ms)
+ GET /api/messages/pqtsho/send 404 in 41ms (compile: 5ms, proxy.ts: 4ms, render: 32ms)
+ GET /api/wa/status 404 in 49ms (compile: 5ms, proxy.ts: 3ms, render: 41ms)
+ GET /api/status 404 in 45ms (compile: 5ms, proxy.ts: 3ms, render: 36ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mdzzssqy 404 in 51ms (compile: 5ms, proxy.ts: 9ms, render: 37ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=me4m3u20 404 in 39ms (compile: 4ms, proxy.ts: 8ms, render: 27ms)
+ GET /api/wa/sessions 404 in 37ms (compile: 4ms, proxy.ts: 3ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=me991g6l 404 in 42ms (compile: 5ms, proxy.ts: 8ms, render: 29ms)
+[90m19:39:07[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:09:07.215Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=medvczla 404 in 44ms (compile: 5ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=meii96he 404 in 50ms (compile: 4ms, proxy.ts: 18ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=men4r4rm 404 in 44ms (compile: 7ms, proxy.ts: 9ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=merrp6ok 404 in 49ms (compile: 4ms, proxy.ts: 16ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=meweefd3 404 in 50ms (compile: 4ms, proxy.ts: 8ms, render: 37ms)
+[90m19:39:37[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:09:37.218Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=mf10so7i 404 in 41ms (compile: 5ms, proxy.ts: 7ms, render: 28ms)
+ POST /api/messages/pqtsho/917588828027@s.whatsapp.net/send 401 in 49ms (compile: 36ms, proxy.ts: 3ms, render: 10ms)
+ POST /api/messages/pqtsho/917588828027@s.whatsapp.net/send 401 in 12ms (compile: 4ms, proxy.ts: 3ms, render: 5ms)
+ GET /api/keys 404 in 54ms (compile: 5ms, proxy.ts: 4ms, render: 45ms)
+[90m19:39:43[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+ GET /api/api-keys 404 in 45ms (compile: 4ms, proxy.ts: 3ms, render: 38ms)
+ GET /api/wa/keys 404 in 39ms (compile: 5ms, proxy.ts: 3ms, render: 30ms)
+ GET /api/wa/api-keys 404 in 32ms (compile: 4ms, proxy.ts: 3ms, render: 26ms)
+ GET /api/me 404 in 32ms (compile: 4ms, proxy.ts: 3ms, render: 25ms)
+ GET /api/user 404 in 36ms (compile: 4ms, proxy.ts: 3ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mf5ndjoo 404 in 40ms (compile: 4ms, proxy.ts: 8ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mfaabgsh 404 in 51ms (compile: 4ms, proxy.ts: 8ms, render: 38ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mfewy5kq 404 in 39ms (compile: 4ms, proxy.ts: 9ms, render: 26ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mfjjfgfk 404 in 43ms (compile: 5ms, proxy.ts: 9ms, render: 29ms)
+[90m19:40:07[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:10:07.222Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=mfo67v5t 404 in 49ms (compile: 5ms, proxy.ts: 10ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mfst4j6c 404 in 60ms (compile: 5ms, proxy.ts: 9ms, render: 47ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mfxfleyw 404 in 44ms (compile: 5ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mg22cmhc 404 in 194ms (compile: 25ms, proxy.ts: 70ms, render: 100ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mg6p24ie 404 in 41ms (compile: 5ms, proxy.ts: 9ms, render: 27ms)
+[90m19:40:37[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:10:37.224Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=mgbbrde7 404 in 65ms (compile: 5ms, proxy.ts: 10ms, render: 50ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mgfy532e 404 in 48ms (compile: 5ms, proxy.ts: 10ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mgkl3wql 404 in 50ms (compile: 6ms, proxy.ts: 11ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mgp7o499 404 in 52ms (compile: 7ms, proxy.ts: 11ms, render: 34ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mgtu1wmn 404 in 49ms (compile: 5ms, proxy.ts: 13ms, render: 31ms)
+[90m19:41:07[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:11:07.225Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=mgygwzf0 404 in 47ms (compile: 6ms, proxy.ts: 8ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mh33dbzu 404 in 48ms (compile: 7ms, proxy.ts: 9ms, render: 32ms)
+ GET / 200 in 72ms (compile: 4ms, proxy.ts: 5ms, render: 63ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mh7q2fho 404 in 42ms (compile: 5ms, proxy.ts: 8ms, render: 29ms)
+ GET / 200 in 62ms (compile: 3ms, proxy.ts: 5ms, render: 54ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mhccsnd0 404 in 42ms (compile: 4ms, proxy.ts: 8ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mhgzegnu 404 in 45ms (compile: 4ms, proxy.ts: 8ms, render: 33ms)
+ GET /api/sessions 200 in 17ms (compile: 5ms, proxy.ts: 3ms, render: 9ms)
+ GET /api/sessions 200 in 10ms (compile: 2ms, proxy.ts: 2ms, render: 6ms)
+Closing session: SessionEntry {
+  _chains: {
+    BSsSH6cnRbq7DKcNcS977SIpyb18JpCJsrWjyuWznhwC: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 1298976218,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 2b 12 1f a7 27 45 ba bb 0c a7 0d 71 2f 7b ed 22 29 c9 bd 7c 26 90 89 b2 b5 a3 ca e5 b3 9e 1c 02>,
+      privKey: <Buffer 10 2b a7 86 6d 1e aa cf 5e c4 31 89 40 7e ca 91 9b b8 5f a3 d3 a7 53 09 4e 25 d9 d0 d7 ab 09 4d>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 74 f1 ee 47 3f a1 ee 82 d8 c0 e8 58 85 30 0a d8 bd 30 c7 9c dd 87 d8 4c 7f 65 7c d7 36 4f e1 29>,
+    previousCounter: 0,
+    rootKey: <Buffer 92 69 22 dd b1 ee fb ce b9 90 af 5f 17 ff 4e 23 89 8d 2d 77 21 d4 21 74 f1 cf fc 8e 7f a0 d7 ec>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 a8 ce c8 98 8d dc c2 f7 02 96 39 b1 57 3d 6e 52 bb 83 b9 cf dc 92 f2 52 7d ef 14 8a 7a 73 c5 5b>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1792058723644,
+    created: 1792058723644,
+    remoteIdentityKey: <Buffer 05 c9 f6 40 21 42 fb f5 08 c7 8a c1 34 3b a2 0d 9b 0b 45 3a 37 5c fe 45 bd 07 60 ac 4e bf d9 50 0f>
+  },
+  pendingPreKey: {
+    signedKeyId: 16454862,
+    baseKey: <Buffer 05 a8 ce c8 98 8d dc c2 f7 02 96 39 b1 57 3d 6e 52 bb 83 b9 cf dc 92 f2 52 7d ef 14 8a 7a 73 c5 5b>,
+    preKeyId: 9996960
+  }
+}
+[90m19:41:35[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type conversation is not a downloadable media.[0m
+ POST /api/messages/pqtsho/917588828027@s.whatsapp.net/send 200 in 656ms (compile: 35ms, proxy.ts: 3ms, render: 617ms)
+[90m19:41:35[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type extendedTextMessage is not a downloadable media.[0m
+[90m19:41:35[0m [45m[37m[1m DBG  [0m [1m[36m[Socket][0m [2mEmitting message.update for 1 messages in session pqtsho[0m
+[90m19:41:35[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+[90m19:41:37[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-15T14:11:37.226Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=mhlm1k5f 404 in 44ms (compile: 5ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mhq8pw9o 404 in 100ms (compile: 24ms, proxy.ts: 8ms, render: 68ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=mhuvddqn 404 in 40ms (compile: 4ms, proxy.ts: 10ms, render: 26ms)
