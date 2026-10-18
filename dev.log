@@ -54,3 +54,17 @@ $ next dev -p 3000
 [90m05:59:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:59:38.529Z...[0m
 [90m06:00:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:00:08.528Z...[0m
 [90m06:00:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:00:38.528Z...[0m
+ GET / 200 in 74ms (compile: 3ms, proxy.ts: 7ms, render: 65ms)
+ GET / 200 in 65ms (compile: 2ms, proxy.ts: 6ms, render: 57ms)
+[90m06:01:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:01:08.531Z...[0m
+[90m06:01:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:01:38.534Z...[0m
+[90m06:02:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:02:08.534Z...[0m
+[90m06:02:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:02:38.537Z...[0m
+[90m06:03:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:03:08.539Z...[0m
+[90m06:03:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:03:38.542Z...[0m
+[90m06:04:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:04:08.545Z...[0m
+[90m06:04:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:04:38.548Z...[0m
+[90m06:05:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:05:08.551Z...[0m
+[90m06:05:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:05:38.555Z...[0m
+[90m06:06:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:06:08.557Z...[0m
+[90m06:06:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:06:38.561Z...[0m
