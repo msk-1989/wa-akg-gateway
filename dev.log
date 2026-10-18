@@ -129,3 +129,245 @@ $ next dev -p 3000
 [90m06:32:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:32:38.633Z...[0m
  GET / 200 in 66ms (compile: 2ms, proxy.ts: 6ms, render: 57ms)
 [90m06:33:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:33:08.633Z...[0m
+ GET / 200 in 59ms (compile: 2ms, proxy.ts: 4ms, render: 52ms)
+[90m06:33:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:33:38.633Z...[0m
+[90m06:34:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:34:08.633Z...[0m
+[90m06:34:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:34:38.634Z...[0m
+ GET / 200 in 59ms (compile: 2ms, proxy.ts: 5ms, render: 52ms)
+[90m06:35:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:35:08.634Z...[0m
+[90m06:35:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:35:38.635Z...[0m
+[90m06:36:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:36:08.635Z...[0m
+[90m06:36:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:36:38.635Z...[0m
+[90m06:37:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:37:08.635Z...[0m
+[90m06:37:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:37:38.636Z...[0m
+[90m06:38:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:38:08.639Z...[0m
+[90m06:38:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:38:38.644Z...[0m
+[90m06:39:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:39:08.647Z...[0m
+[90m06:39:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:39:38.647Z...[0m
+[90m06:40:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:40:08.650Z...[0m
+[90m06:40:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:40:38.653Z...[0m
+[90m06:41:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:41:08.656Z...[0m
+[90m06:41:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:41:38.659Z...[0m
+[90m06:42:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:42:08.659Z...[0m
+[90m06:42:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:42:38.660Z...[0m
+[90m06:43:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:43:08.663Z...[0m
+[90m06:43:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:43:38.666Z...[0m
+[90m06:44:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:44:08.667Z...[0m
+[90m06:44:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:44:38.668Z...[0m
+[90m06:45:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:45:08.670Z...[0m
+[90m06:45:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:45:38.671Z...[0m
+[90m06:46:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:46:08.672Z...[0m
+ GET / 200 in 64ms (compile: 4ms, proxy.ts: 6ms, render: 54ms)
+[90m06:46:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:46:38.673Z...[0m
+[90m06:47:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:47:08.676Z...[0m
+[90m06:47:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:47:38.679Z...[0m
+[90m06:48:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:48:08.682Z...[0m
+[90m06:48:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:48:38.686Z...[0m
+[90m06:49:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:49:08.688Z...[0m
+[90m06:49:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:49:38.690Z...[0m
+ GET /auth/login?callbackUrl=%2Fdashboard 200 in 102ms (compile: 47ms, proxy.ts: 12ms, render: 43ms)
+ GET / 200 in 105ms (compile: 5ms, proxy.ts: 12ms, render: 89ms)
+[90m06:50:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:50:08.691Z...[0m
+ GET /api/auth/session 200 in 47ms (compile: 28ms, proxy.ts: 5ms, render: 13ms)
+ GET /api/auth/session 200 in 21ms (compile: 7ms, proxy.ts: 10ms, render: 4ms)
+ GET /auth/login?callbackUrl=%2Ficon 200 in 66ms (compile: 5ms, proxy.ts: 7ms, render: 54ms)
+[auth] WARNING: AUTH_SECRET not set in env — using derived fallback. Set AUTH_SECRET for production.
+ GET / 200 in 117ms (compile: 2ms, proxy.ts: 6ms, render: 108ms)
+ GET / 200 in 79ms (compile: 3ms, proxy.ts: 9ms, render: 67ms)
+[90m06:50:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:50:38.694Z...[0m
+[90m06:51:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:51:08.698Z...[0m
+[90m06:51:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:51:38.701Z...[0m
+[90m06:52:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:52:08.703Z...[0m
+[90m06:52:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:52:38.706Z...[0m
+[90m06:53:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:53:08.708Z...[0m
+[90m06:53:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:53:38.711Z...[0m
+[90m06:54:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:54:08.714Z...[0m
+[90m06:54:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:54:38.717Z...[0m
+[90m06:55:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:55:08.721Z...[0m
+[90m06:55:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:55:38.724Z...[0m
+[90m06:56:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:56:08.727Z...[0m
+[90m06:56:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:56:38.730Z...[0m
+ GET / 200 in 60ms (compile: 2ms, proxy.ts: 6ms, render: 52ms)
+[90m06:57:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:57:08.732Z...[0m
+[90m06:57:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:57:38.732Z...[0m
+[90m06:58:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:58:08.736Z...[0m
+[90m06:58:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:58:38.736Z...[0m
+[90m06:59:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:59:08.736Z...[0m
+ GET / 200 in 58ms (compile: 2ms, proxy.ts: 5ms, render: 50ms)
+[90m06:59:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:59:38.736Z...[0m
+[90m07:00:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:00:08.739Z...[0m
+[90m07:00:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:00:38.743Z...[0m
+[90m07:01:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:01:08.746Z...[0m
+[90m07:01:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:01:38.748Z...[0m
+[90m07:02:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:02:08.748Z...[0m
+[90m07:02:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:02:38.751Z...[0m
+[90m07:03:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:03:08.754Z...[0m
+[90m07:03:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:03:38.756Z...[0m
+[90m07:04:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:04:08.758Z...[0m
+[90m07:04:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:04:38.760Z...[0m
+[90m07:05:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:05:08.762Z...[0m
+[90m07:05:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:05:38.764Z...[0m
+[90m07:06:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:06:08.765Z...[0m
+[90m07:06:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:06:38.767Z...[0m
+[90m07:07:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:07:08.770Z...[0m
+ GET / 200 in 63ms (compile: 4ms, proxy.ts: 7ms, render: 52ms)
+[90m07:07:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:07:38.772Z...[0m
+[90m07:08:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:08:08.772Z...[0m
+[90m07:08:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:08:38.774Z...[0m
+ GET / 200 in 64ms (compile: 2ms, proxy.ts: 8ms, render: 54ms)
+[90m07:09:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:09:08.774Z...[0m
+[90m07:09:09[0m [45m[37m[1m DBG  [0m [1m[36m[Store][0m [2mReceived 1 contact updates for session pqtsho[0m
+[90m07:09:09[0m [45m[37m[1m DBG  [0m [1m[36m[AutoReply][0m [2mProcessing for pqtsho. Config: Found, Enabled[0m
+[90m07:09:09[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type senderKeyDistributionMessage is not a downloadable media.[0m
+[90m07:09:09[0m [45m[37m[1m DBG  [0m [1m[36m[Socket][0m [2mEmitting message.update for 1 messages in session pqtsho[0m
+[90m07:09:09[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type senderKeyDistributionMessage is not a downloadable media.[0m
+ GET /api/auth/providers 200 in 34ms (compile: 23ms, proxy.ts: 5ms, render: 6ms)
+ GET /api/auth/csrf 200 in 10ms (compile: 3ms, proxy.ts: 3ms, render: 4ms)
+[auth] WARNING: AUTH_SECRET not set in env — using derived fallback. Set AUTH_SECRET for production.
+ POST /api/auth/callback/credentials? 200 in 134ms (compile: 9ms, proxy.ts: 5ms, render: 119ms)
+ GET /api/auth/session 200 in 33ms (compile: 21ms, proxy.ts: 3ms, render: 10ms)
+[auth] WARNING: AUTH_SECRET not set in env — using derived fallback. Set AUTH_SECRET for production.
+○ Compiling /dashboard ...
+[auth] WARNING: AUTH_SECRET not set in env — using derived fallback. Set AUTH_SECRET for production.
+ GET /dashboard/ 200 in 4.6s (compile: 4.0s, proxy.ts: 9ms, render: 537ms)
+ GET /dashboard/ 200 in 72ms (compile: 3ms, proxy.ts: 8ms, render: 61ms)
+ GET /icon?2ab3d9d3fc9d921 200 in 379ms (compile: 195ms, proxy.ts: 11ms, render: 173ms)
+ GET /api/auth/session 200 in 292ms (compile: 73ms, proxy.ts: 4ms, render: 215ms)
+ GET /api/auth/session 200 in 82ms (compile: 41ms, proxy.ts: 7ms, render: 34ms)
+ GET /api/notifications 200 in 858ms (compile: 525ms, proxy.ts: 281ms, render: 51ms)
+[auth] WARNING: AUTH_SECRET not set in env — using derived fallback. Set AUTH_SECRET for production.
+ GET /api/settings/system 200 in 1100ms (compile: 804ms, proxy.ts: 281ms, render: 15ms)
+ GET /api/notifications 200 in 54ms (compile: 3ms, proxy.ts: 9ms, render: 42ms)
+[90m07:09:27[0m [41m[37m[1m ERR! [0m [1m[36m[GitHub][0m [31mAPI Error: 403 rate limit exceeded - {"message":"API rate limit exceeded for 47.57.232.232. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+[0m
+ POST /api/system/check-updates 200 in 1407ms (compile: 934ms, proxy.ts: 281ms, render: 192ms)
+ GET /api/sessions 200 in 1560ms (compile: 1194ms, proxy.ts: 288ms, render: 77ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hq7vwhxa 404 in 1298ms (compile: 1118ms, proxy.ts: 77ms, render: 103ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hqa0jxib 404 in 42ms (compile: 6ms, proxy.ts: 9ms, render: 27ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hqb9o6fb 404 in 39ms (compile: 4ms, proxy.ts: 9ms, render: 26ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hqeat952 404 in 53ms (compile: 7ms, proxy.ts: 8ms, render: 38ms)
+[90m07:09:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:09:38.774Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hqj3hya2 404 in 37ms (compile: 4ms, proxy.ts: 8ms, render: 24ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hqnqaym9 404 in 51ms (compile: 6ms, proxy.ts: 9ms, render: 35ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hqscvcst 404 in 52ms (compile: 8ms, proxy.ts: 11ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hqwzl2u8 404 in 48ms (compile: 5ms, proxy.ts: 10ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hr1mb5j4 404 in 51ms (compile: 7ms, proxy.ts: 9ms, render: 35ms)
+[90m07:10:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:10:08.776Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hr68vx2a 404 in 46ms (compile: 4ms, proxy.ts: 9ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hravhteo 404 in 55ms (compile: 10ms, proxy.ts: 12ms, render: 34ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hrfi4ecc 404 in 45ms (compile: 4ms, proxy.ts: 9ms, render: 32ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hrk4u73g 404 in 49ms (compile: 7ms, proxy.ts: 8ms, render: 34ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hroru265 404 in 46ms (compile: 7ms, proxy.ts: 9ms, render: 31ms)
+[90m07:10:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:10:38.778Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hrteguaz 404 in 43ms (compile: 4ms, proxy.ts: 8ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hry1c9j9 404 in 53ms (compile: 4ms, proxy.ts: 9ms, render: 40ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hs2nj2c0 404 in 46ms (compile: 4ms, proxy.ts: 9ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hs7abjct 404 in 49ms (compile: 6ms, proxy.ts: 7ms, render: 36ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hsdgnv50 404 in 55ms (compile: 7ms, proxy.ts: 12ms, render: 36ms)
+[90m07:11:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:11:08.778Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hsi3b4ko 404 in 44ms (compile: 4ms, proxy.ts: 8ms, render: 32ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hsqko535 404 in 43ms (compile: 5ms, proxy.ts: 10ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hsv7jc30 404 in 45ms (compile: 4ms, proxy.ts: 12ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hsztzpvv 404 in 41ms (compile: 4ms, proxy.ts: 7ms, render: 31ms)
+[90m07:11:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:11:38.780Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=ht4gweo1 404 in 49ms (compile: 5ms, proxy.ts: 6ms, render: 37ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=ht93gon6 404 in 44ms (compile: 4ms, proxy.ts: 9ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=htdpz8tv 404 in 46ms (compile: 9ms, proxy.ts: 7ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hticpug8 404 in 45ms (compile: 5ms, proxy.ts: 11ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=htnr490y 404 in 48ms (compile: 5ms, proxy.ts: 10ms, render: 33ms)
+[90m07:12:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:12:08.781Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=htsdugw8 404 in 43ms (compile: 4ms, proxy.ts: 8ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=htx0g0oa 404 in 49ms (compile: 6ms, proxy.ts: 8ms, render: 35ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hu1nbc8k 404 in 42ms (compile: 4ms, proxy.ts: 8ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=huawj9cm 404 in 48ms (compile: 4ms, proxy.ts: 8ms, render: 36ms)
+[90m07:12:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:12:38.781Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hufj9kym 404 in 47ms (compile: 5ms, proxy.ts: 9ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=huk5w1f7 404 in 49ms (compile: 6ms, proxy.ts: 8ms, render: 35ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=huosgila 404 in 44ms (compile: 5ms, proxy.ts: 8ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hutff749 404 in 43ms (compile: 7ms, proxy.ts: 7ms, render: 28ms)
+[90m07:13:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:13:08.782Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=huytv84x 404 in 41ms (compile: 4ms, proxy.ts: 9ms, render: 27ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hv482b9x 404 in 49ms (compile: 5ms, proxy.ts: 13ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hv8umkhk 404 in 41ms (compile: 4ms, proxy.ts: 9ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hve9fio0 404 in 46ms (compile: 4ms, proxy.ts: 7ms, render: 35ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hvivtlty 404 in 47ms (compile: 4ms, proxy.ts: 9ms, render: 34ms)
+[90m07:13:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:13:38.784Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hvnijdhz 404 in 57ms (compile: 7ms, proxy.ts: 8ms, render: 42ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hvs54epa 404 in 44ms (compile: 7ms, proxy.ts: 8ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hvwruryt 404 in 47ms (compile: 5ms, proxy.ts: 10ms, render: 32ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hw1elwcl 404 in 43ms (compile: 4ms, proxy.ts: 8ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hw613jlp 404 in 45ms (compile: 5ms, proxy.ts: 8ms, render: 32ms)
+[90m07:14:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:14:08.787Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hwanxezs 404 in 42ms (compile: 4ms, proxy.ts: 8ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hwfars4k 404 in 51ms (compile: 4ms, proxy.ts: 9ms, render: 38ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hwjxe24n 404 in 43ms (compile: 4ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hwok2ivt 404 in 46ms (compile: 5ms, proxy.ts: 8ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hwt6pu1d 404 in 45ms (compile: 7ms, proxy.ts: 8ms, render: 30ms)
+[90m07:14:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:14:38.790Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hwxtcijb 404 in 44ms (compile: 5ms, proxy.ts: 11ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hx37v5v4 404 in 40ms (compile: 4ms, proxy.ts: 9ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hx7uc8vy 404 in 43ms (compile: 4ms, proxy.ts: 8ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hxch2ccr 404 in 43ms (compile: 4ms, proxy.ts: 8ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hxh3tal7 404 in 56ms (compile: 5ms, proxy.ts: 10ms, render: 41ms)
+[90m07:15:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:15:08.793Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hxlqi32t 404 in 59ms (compile: 7ms, proxy.ts: 14ms, render: 37ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hxqcuaci 404 in 52ms (compile: 9ms, proxy.ts: 11ms, render: 32ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hxuzirto 404 in 45ms (compile: 7ms, proxy.ts: 8ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hxzmgb6a 404 in 45ms (compile: 5ms, proxy.ts: 10ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hy497lgs 404 in 48ms (compile: 4ms, proxy.ts: 9ms, render: 34ms)
+[90m07:15:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:15:38.796Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hy8viyig 404 in 45ms (compile: 4ms, proxy.ts: 8ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hydiy1fw 404 in 43ms (compile: 4ms, proxy.ts: 8ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hyi52lhe 404 in 52ms (compile: 4ms, proxy.ts: 8ms, render: 40ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hymrogwj 404 in 45ms (compile: 4ms, proxy.ts: 8ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hyre9yko 404 in 49ms (compile: 4ms, proxy.ts: 8ms, render: 37ms)
+[90m07:16:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:16:08.798Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hyw16ult 404 in 46ms (compile: 7ms, proxy.ts: 7ms, render: 32ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hz0ns8qv 404 in 47ms (compile: 5ms, proxy.ts: 8ms, render: 35ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hz5a63e4 404 in 45ms (compile: 5ms, proxy.ts: 11ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hz9wwjad 404 in 42ms (compile: 6ms, proxy.ts: 8ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hzejsr4w 404 in 45ms (compile: 4ms, proxy.ts: 10ms, render: 31ms)
+[90m07:16:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:16:38.801Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=hzj6i3e3 404 in 49ms (compile: 4ms, proxy.ts: 8ms, render: 37ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hzntbhjh 404 in 45ms (compile: 5ms, proxy.ts: 9ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hzsfo4r9 404 in 43ms (compile: 6ms, proxy.ts: 11ms, render: 26ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=hzx2f46u 404 in 45ms (compile: 5ms, proxy.ts: 12ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i01p4h8i 404 in 41ms (compile: 5ms, proxy.ts: 8ms, render: 28ms)
+[90m07:17:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:17:08.804Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=i06bofyu 404 in 43ms (compile: 5ms, proxy.ts: 9ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i0aydpdm 404 in 42ms (compile: 7ms, proxy.ts: 7ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i0fkwz2s 404 in 40ms (compile: 4ms, proxy.ts: 8ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i0k7n7wc 404 in 42ms (compile: 5ms, proxy.ts: 10ms, render: 28ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i0oui5kz 404 in 49ms (compile: 4ms, proxy.ts: 11ms, render: 34ms)
+[90m07:17:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:17:38.807Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=i0th1tdf 404 in 48ms (compile: 4ms, proxy.ts: 10ms, render: 33ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i0y3wk0i 404 in 43ms (compile: 4ms, proxy.ts: 8ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i12qghk0 404 in 42ms (compile: 4ms, proxy.ts: 8ms, render: 30ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i17d0m1h 404 in 39ms (compile: 5ms, proxy.ts: 8ms, render: 27ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i1bzpbuw 404 in 46ms (compile: 4ms, proxy.ts: 13ms, render: 29ms)
+[90m07:18:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:18:08.810Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=i1gmf2qa 404 in 45ms (compile: 7ms, proxy.ts: 9ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i1l96clt 404 in 46ms (compile: 6ms, proxy.ts: 10ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i1pvju2p 404 in 58ms (compile: 4ms, proxy.ts: 10ms, render: 43ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i1ui92d3 404 in 49ms (compile: 5ms, proxy.ts: 9ms, render: 35ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i1z4t88j 404 in 46ms (compile: 5ms, proxy.ts: 7ms, render: 34ms)
+[90m07:18:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:18:38.813Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=i23rg7cd 404 in 43ms (compile: 4ms, proxy.ts: 9ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i28ebvaj 404 in 44ms (compile: 4ms, proxy.ts: 8ms, render: 32ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i2d18pjn 404 in 45ms (compile: 4ms, proxy.ts: 9ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i2hnrexh 404 in 42ms (compile: 4ms, proxy.ts: 8ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i2ma8tdg 404 in 42ms (compile: 4ms, proxy.ts: 8ms, render: 31ms)
+[90m07:19:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:19:08.815Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=i2qwxtym 404 in 45ms (compile: 4ms, proxy.ts: 8ms, render: 34ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i2vjrjf3 404 in 40ms (compile: 4ms, proxy.ts: 8ms, render: 27ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i306df4g 404 in 48ms (compile: 11ms, proxy.ts: 8ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i34t2uex 404 in 47ms (compile: 4ms, proxy.ts: 8ms, render: 35ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i39fkws4 404 in 47ms (compile: 7ms, proxy.ts: 9ms, render: 31ms)
+[90m07:19:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:19:38.817Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=i3e26rf5 404 in 43ms (compile: 5ms, proxy.ts: 10ms, render: 27ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i3iovobc 404 in 47ms (compile: 5ms, proxy.ts: 10ms, render: 31ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i3nbhuaa 404 in 39ms (compile: 4ms, proxy.ts: 6ms, render: 29ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i3ryji4b 404 in 59ms (compile: 4ms, proxy.ts: 9ms, render: 46ms)
+ GET /api/socket/io/?EIO=4&transport=polling&t=i3wl2ypp 404 in 42ms (compile: 4ms, proxy.ts: 8ms, render: 29ms)
+[90m07:20:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T07:20:08.819Z...[0m
+ GET /api/socket/io/?EIO=4&transport=polling&t=i417hztt 404 in 50ms (compile: 5ms, proxy.ts: 14ms, render: 32ms)
