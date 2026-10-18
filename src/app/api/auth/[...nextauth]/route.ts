@@ -1,9 +1,10 @@
 import { handlers } from "@/lib/auth";
+import { NextRequest } from "next/server";
 
 // Wrap the NextAuth handlers to catch any errors and always return valid JSON
 // This fixes the "Unexpected end of JSON input" error when the session route
 // crashes silently (known NextAuth v5 beta + Turbopack issue)
-async function safeHandler(req: Request) {
+async function safeHandler(req: NextRequest) {
   try {
     const res = await handlers.GET(req);
     // If the response has no body or empty body, return a proper JSON response
@@ -28,11 +29,11 @@ async function safeHandler(req: Request) {
   }
 }
 
-export async function GET(req: Request) {
+export async function GET(req: NextRequest) {
   return safeHandler(req);
 }
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
     return await handlers.POST(req);
   } catch (error) {

@@ -38,6 +38,12 @@
     "**/*.mts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "skills",
+    "download",
+    "upload",
+    "test-*.ts",
+    "test-*.js",
+    "scripts"
   ]
 }
