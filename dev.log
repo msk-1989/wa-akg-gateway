@@ -41,3 +41,16 @@ $ next dev -p 3000
 [90m05:56:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:56:38.519Z...[0m
 [90m05:57:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:57:08.522Z...[0m
 [90m05:57:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:57:38.524Z...[0m
+ GET / 200 in 66ms (compile: 3ms, proxy.ts: 4ms, render: 58ms)
+[90m05:58:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:58:08.527Z...[0m
+ GET / 200 in 74ms (compile: 3ms, proxy.ts: 6ms, render: 65ms)
+[90m05:58:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:58:38.528Z...[0m
+[90m05:59:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:59:08.529Z...[0m
+[90m05:59:36[0m [45m[37m[1m DBG  [0m [1m[36m[Store][0m [2mReceived 1 contact updates for session pqtsho[0m
+[90m05:59:36[0m [45m[37m[1m DBG  [0m [1m[36m[AutoReply][0m [2mProcessing for pqtsho. Config: Found, Enabled[0m
+[90m05:59:36[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type senderKeyDistributionMessage is not a downloadable media.[0m
+[90m05:59:36[0m [45m[37m[1m DBG  [0m [1m[36m[Socket][0m [2mEmitting message.update for 1 messages in session pqtsho[0m
+[90m05:59:36[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type senderKeyDistributionMessage is not a downloadable media.[0m
+[90m05:59:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:59:38.529Z...[0m
+[90m06:00:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:00:08.528Z...[0m
+[90m06:00:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T06:00:38.528Z...[0m
