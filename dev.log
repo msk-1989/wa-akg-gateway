@@ -110,3 +110,68 @@ Closing session: SessionEntry {
 [90m14:39:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:09:54.404Z...[0m
  GET / 200 in 80ms (compile: 2ms, proxy.ts: 6ms, render: 72ms)
 [90m14:40:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:10:24.406Z...[0m
+ GET / 200 in 66ms (compile: 5ms, proxy.ts: 6ms, render: 55ms)
+[90m14:40:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:10:54.408Z...[0m
+[90m14:41:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:11:24.409Z...[0m
+[90m14:41:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:11:54.411Z...[0m
+[90m14:42:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:12:24.413Z...[0m
+[90m14:42:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:12:54.415Z...[0m
+[90m14:43:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:13:24.415Z...[0m
+[90m14:43:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:13:54.418Z...[0m
+[90m14:44:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:14:24.420Z...[0m
+[90m14:44:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:14:54.422Z...[0m
+[90m14:45:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:15:24.423Z...[0m
+[90m14:45:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:15:54.426Z...[0m
+[90m14:46:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:16:24.428Z...[0m
+[90m14:46:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:16:54.432Z...[0m
+[90m14:47:19[0m [45m[37m[1m DBG  [0m [1m[36m[Store][0m [2mReceived 1 contact updates for session pqtsho[0m
+[90m14:47:19[0m [45m[37m[1m DBG  [0m [1m[36m[AutoReply][0m [2mProcessing for pqtsho. Config: Found, Enabled[0m
+[90m14:47:19[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type senderKeyDistributionMessage is not a downloadable media.[0m
+[90m14:47:19[0m [45m[37m[1m DBG  [0m [1m[36m[Socket][0m [2mEmitting message.update for 1 messages in session pqtsho[0m
+[90m14:47:19[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type senderKeyDistributionMessage is not a downloadable media.[0m
+[90m14:47:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:17:24.436Z...[0m
+[90m14:47:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:17:54.439Z...[0m
+ GET / 200 in 71ms (compile: 2ms, proxy.ts: 7ms, render: 61ms)
+[90m14:48:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:18:24.440Z...[0m
+[90m14:48:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:18:54.441Z...[0m
+[90m14:49:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:19:24.443Z...[0m
+[90m14:49:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:19:54.444Z...[0m
+ GET / 200 in 74ms (compile: 4ms, proxy.ts: 8ms, render: 63ms)
+ GET / 200 in 70ms (compile: 2ms, proxy.ts: 5ms, render: 63ms)
+ GET /api/sessions 200 in 16ms (compile: 3ms, proxy.ts: 3ms, render: 10ms)
+[90m14:50:11[0m [45m[37m[1m DBG  [0m [1m[36m[Anti-Spam][0m [2m📥 QUEUED  | Session: pqtsho | #2 | To: 917588828027 | Type: text | Queue position: 1[0m
+[90m14:50:11[0m [42m[30m[1m  OK  [0m [1m[36m[Anti-Spam][0m [32m✅ INSTANT | Session: pqtsho | #2 | To: 917588828027 | Type: text | Rate: 2/5 | Queue: 0 remaining[0m
+Closing session: SessionEntry {
+  _chains: {
+    BanWjZJylgva0gLqeWc6p0tjYjghACtbfNqKJB6NhPU9: { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 1298976218,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 a9 d6 8d 92 72 96 0b da d2 02 ea 79 67 3a a7 4b 63 62 38 21 00 2b 5b 7c da 8a 24 1e 8d 84 f5 3d>,
+      privKey: <Buffer a0 f0 4a 64 8f 2b f0 d1 a3 db 79 f1 f2 7c 9c 10 e3 26 83 82 79 ae 26 9d d0 b6 66 37 26 fb 22 4e>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 74 f1 ee 47 3f a1 ee 82 d8 c0 e8 58 85 30 0a d8 bd 30 c7 9c dd 87 d8 4c 7f 65 7c d7 36 4f e1 29>,
+    previousCounter: 0,
+    rootKey: <Buffer e6 5d e7 f5 cb 85 7d a0 19 47 42 2d 71 e1 0c 29 45 6c 10 c1 5b ea da 2c 5b c7 51 e1 c4 2b 14 b2>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 66 d0 5a ab 0b fb 4f 53 f9 34 0f a2 d4 58 3f ef 58 29 ad 04 c2 9e 14 85 6c cf 80 72 98 ff 11 60>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1792313899662,
+    created: 1792313899662,
+    remoteIdentityKey: <Buffer 05 c9 f6 40 21 42 fb f5 08 c7 8a c1 34 3b a2 0d 9b 0b 45 3a 37 5c fe 45 bd 07 60 ac 4e bf d9 50 0f>
+  },
+  pendingPreKey: {
+    signedKeyId: 16454862,
+    baseKey: <Buffer 05 66 d0 5a ab 0b fb 4f 53 f9 34 0f a2 d4 58 3f ef 58 29 ad 04 c2 9e 14 85 6c cf 80 72 98 ff 11 60>,
+    preKeyId: 9996981
+  }
+}
+[90m14:50:12[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type conversation is not a downloadable media.[0m
+ POST /api/messages/pqtsho/917588828027@s.whatsapp.net/send 200 in 523ms (compile: 25ms, proxy.ts: 3ms, render: 495ms)
+[90m14:50:12[0m [45m[37m[1m DBG  [0m [1m[36m[Media][0m [2mMessage type extendedTextMessage is not a downloadable media.[0m
+[90m14:50:12[0m [45m[37m[1m DBG  [0m [1m[36m[Socket][0m [2mEmitting message.update for 1 messages in session pqtsho[0m
+[90m14:50:12[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+[90m14:50:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:20:24.444Z...[0m
