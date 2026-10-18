@@ -25,3 +25,88 @@ $ next dev -p 3000
  GET /auth/login?callbackUrl=%2Ficon 200 in 45ms (compile: 2ms, proxy.ts: 9ms, render: 34ms)
  GET /api/auth/session 200 in 628ms (compile: 603ms, proxy.ts: 7ms, render: 19ms)
  GET /api/auth/session 200 in 34ms (compile: 23ms, proxy.ts: 3ms, render: 7ms)
+ GET / 200 in 77ms (compile: 3ms, proxy.ts: 7ms, render: 68ms)
+[90m14:23:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:53:54.323Z...[0m
+[90m14:24:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:54:24.324Z...[0m
+ GET / 200 in 78ms (compile: 4ms, proxy.ts: 7ms, render: 66ms)
+ GET / 200 in 71ms (compile: 3ms, proxy.ts: 5ms, render: 64ms)
+[90m14:24:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:54:54.326Z...[0m
+[90m14:25:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:55:24.328Z...[0m
+ GET /auth/login 200 in 54ms (compile: 3ms, proxy.ts: 9ms, render: 41ms)
+ GET /api/auth/session 200 in 35ms (compile: 27ms, proxy.ts: 3ms, render: 5ms)
+ GET /api/auth/session 200 in 58ms (compile: 43ms, proxy.ts: 8ms, render: 6ms)
+ GET /auth/login?callbackUrl=%2Ficon 200 in 66ms (compile: 6ms, proxy.ts: 13ms, render: 46ms)
+ GET /api/auth/session 200 in 15ms (compile: 3ms, proxy.ts: 3ms, render: 9ms)
+[90m14:25:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:55:54.330Z...[0m
+ GET /auth/login 200 in 49ms (compile: 3ms, proxy.ts: 6ms, render: 40ms)
+[90m14:26:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:56:24.333Z...[0m
+ GET /api/sessions 200 in 129ms (compile: 112ms, proxy.ts: 3ms, render: 14ms)
+ GET / 200 in 131ms (compile: 6ms, proxy.ts: 6ms, render: 119ms)
+[90m14:26:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:56:54.335Z...[0m
+[90m14:27:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:57:24.337Z...[0m
+[90m14:27:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:57:54.340Z...[0m
+ GET /api/sessions 200 in 14ms (compile: 3ms, proxy.ts: 3ms, render: 8ms)
+[90m14:28:18[0m [44m[37m[1m INFO [0m [1m[36m[Cron][0m Scheduler initialized
+[90m14:28:18[0m [45m[37m[1m DBG  [0m [1m[36m[Anti-Spam][0m [2m📥 QUEUED  | Session: pqtsho | #1 | To: 919421268768 | Type: document | Queue position: 1[0m
+[90m14:28:18[0m [42m[30m[1m  OK  [0m [1m[36m[Anti-Spam][0m [32m✅ INSTANT | Session: pqtsho | #1 | To: 919421268768 | Type: document | Rate: 2/5 | Queue: 0 remaining[0m
+Closing session: SessionEntry {
+  _chains: {
+    'Bdna61+LYEy+AODeKhDXWLuRY5i+7MbphhvGAB1iGpZ+': { chainKey: [Object], chainType: 1, messageKeys: {} }
+  },
+  registrationId: 1298976218,
+  currentRatchet: {
+    ephemeralKeyPair: {
+      pubKey: <Buffer 05 d9 da eb 5f 8b 60 4c be 00 e0 de 2a 10 d7 58 bb 91 63 98 be ec c6 e9 86 1b c6 00 1d 62 1a 96 7e>,
+      privKey: <Buffer b8 55 6a 69 08 a0 af fa a0 11 31 3b e7 ab a8 ba f3 7b 0a b6 c4 ae d0 cc 3d 05 b5 66 be 22 c3 65>
+    },
+    lastRemoteEphemeralKey: <Buffer 05 74 f1 ee 47 3f a1 ee 82 d8 c0 e8 58 85 30 0a d8 bd 30 c7 9c dd 87 d8 4c 7f 65 7c d7 36 4f e1 29>,
+    previousCounter: 0,
+    rootKey: <Buffer e7 38 6a 61 0c 72 9c ff a3 68 88 e7 3c e4 f9 56 db e2 62 7a 25 47 a6 93 0d f0 30 bc 76 bc a4 25>
+  },
+  indexInfo: {
+    baseKey: <Buffer 05 60 96 50 09 a0 a2 15 1e be ab df 0f ee 5f 0c db 75 a1 8c 0c 8a 94 ca e5 a0 a4 89 b6 bf 49 77 01>,
+    baseKeyType: 1,
+    closed: -1,
+    used: 1792082929325,
+    created: 1792082929325,
+    remoteIdentityKey: <Buffer 05 c9 f6 40 21 42 fb f5 08 c7 8a c1 34 3b a2 0d 9b 0b 45 3a 37 5c fe 45 bd 07 60 ac 4e bf d9 50 0f>
+  },
+  pendingPreKey: {
+    signedKeyId: 16454862,
+    baseKey: <Buffer 05 60 96 50 09 a0 a2 15 1e be ab df 0f ee 5f 0c db 75 a1 8c 0c 8a 94 ca e5 a0 a4 89 b6 bf 49 77 01>,
+    preKeyId: 9996970
+  }
+}
+[90m14:28:19[0m [44m[37m[1m INFO [0m [1m[36m[Media][0m Attempting to download documentMessage...
+[90m14:28:19[0m [41m[37m[1m ERR! [0m [1m[36m[Media][0m [31mFailed to download encrypted media: "documentMessage" message is not a media message[0m
+ POST /api/messages/pqtsho/919421268768%40s.whatsapp.net/send 200 in 2.1s (compile: 1041ms, proxy.ts: 4ms, render: 1038ms)
+[90m14:28:19[0m [44m[37m[1m INFO [0m [1m[36m[Media][0m Attempting to download documentMessage...
+[90m14:28:20[0m [42m[30m[1m  OK  [0m [1m[36m[Media][0m [32mDownloaded 32796 bytes.[0m
+[90m14:28:20[0m [42m[30m[1m  OK  [0m [1m[36m[Media][0m [32mSuccess. URL: /api/media/pqtsho-3EB0409CE65B7F90B96A13.pdf[0m
+[90m14:28:20[0m [45m[37m[1m DBG  [0m [1m[36m[Socket][0m [2mEmitting message.update for 1 messages in session pqtsho[0m
+[90m14:28:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:58:24.340Z...[0m
+[90m14:28:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:58:54.342Z...[0m
+[90m14:29:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:59:24.344Z...[0m
+[90m14:29:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T08:59:54.348Z...[0m
+[90m14:30:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:00:24.352Z...[0m
+[90m14:30:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:00:54.356Z...[0m
+[90m14:31:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:01:24.360Z...[0m
+[90m14:31:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:01:54.360Z...[0m
+[90m14:32:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:02:24.362Z...[0m
+[90m14:32:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:02:54.366Z...[0m
+[90m14:33:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:03:24.366Z...[0m
+[90m14:33:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:03:54.369Z...[0m
+[90m14:34:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:04:24.372Z...[0m
+[90m14:34:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:04:54.376Z...[0m
+[90m14:35:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:05:24.380Z...[0m
+[90m14:35:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:05:54.383Z...[0m
+[90m14:36:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:06:24.387Z...[0m
+[90m14:36:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:06:54.390Z...[0m
+[90m14:37:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:07:24.393Z...[0m
+[90m14:37:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:07:54.396Z...[0m
+[90m14:38:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:08:24.398Z...[0m
+[90m14:38:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:08:54.402Z...[0m
+[90m14:39:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:09:24.402Z...[0m
+[90m14:39:54[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:09:54.404Z...[0m
+ GET / 200 in 80ms (compile: 2ms, proxy.ts: 6ms, render: 72ms)
+[90m14:40:24[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T09:10:24.406Z...[0m
