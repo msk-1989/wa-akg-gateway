@@ -47,3 +47,6 @@ next-env.d.ts
 /public/media/*
 server.log
 /logs/
+skills/
+download/
+upload/
