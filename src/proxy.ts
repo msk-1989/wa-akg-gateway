@@ -34,7 +34,7 @@ export async function proxy(request: NextRequest) {
     };
 
     // Public routes that don't require authentication
-    const publicRoutes = ["/auth/login", "/auth/register", "/api/auth", "/api/test", "/terms", "/privacy"];
+    const publicRoutes = ["/auth/login", "/auth/register", "/api/auth", "/api/test", "/api/health", "/api/ping", "/terms", "/privacy"];
     const isPublicRoute = publicRoutes.some(route => pathname.startsWith(route));
 
     // Allow Next.js internals and favicon only
@@ -50,7 +50,7 @@ export async function proxy(request: NextRequest) {
 
     // API routes: Check for API key or session
     if (pathname.startsWith("/api/")) {
-        if (pathname.startsWith("/api/auth") || pathname.startsWith("/api/test") || pathname.startsWith("/api/health")) {
+        if (pathname.startsWith("/api/auth") || pathname.startsWith("/api/test") || pathname.startsWith("/api/health") || pathname.startsWith("/api/ping")) {
             return pass();
         }
         const apiKey = request.headers.get("x-api-key");

@@ -6,7 +6,7 @@ services:
   - type: web
     name: wa-akg-gateway
     runtime: docker
-    plan: starter  # $7/mo — needed for persistent process + WebSocket support
+    plan: free  # Free tier — needs UptimeRobot ping to stay awake
     dockerfilePath: ./Dockerfile.prod
     dockerContext: .
     healthCheckPath: /api/health
@@ -19,17 +19,17 @@ services:
       - key: HOSTNAME
         value: 0.0.0.0
       - key: DATABASE_URL
-        sync: false  # Set this manually — your Neon pooled connection string
+        sync: false
       - key: DIRECT_URL
-        sync: false  # Set this manually — your Neon direct connection string
+        sync: false
       - key: AUTH_SECRET
-        sync: false  # Set this manually — generate with: openssl rand -base64 32
+        sync: false
       - key: NEXTAUTH_URL
-        sync: false  # Set this manually — your Render URL (https://wa-akg.onrender.com)
+        sync: false
       - key: ADMIN_EMAIL
-        sync: false  # Set this manually
+        sync: false
       - key: ADMIN_PASSWORD
-        sync: false  # Set this manually
+        sync: false
       - key: TZ
         value: Asia/Kolkata
       - key: LOCALE
