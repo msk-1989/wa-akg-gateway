@@ -28,3 +28,16 @@ $ next dev -p 3000
  GET /api/auth/session 200 in 638ms (compile: 623ms, proxy.ts: 5ms, render: 10ms)
  GET /api/auth/session 200 in 32ms (compile: 24ms, proxy.ts: 4ms, render: 5ms)
 [auth] WARNING: AUTH_SECRET not set in env — using derived fallback. Set AUTH_SECRET for production.
+ GET / 200 in 63ms (compile: 3ms, proxy.ts: 9ms, render: 52ms)
+[90m05:52:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:52:38.504Z...[0m
+[90m05:53:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:53:08.507Z...[0m
+[90m05:53:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:53:38.509Z...[0m
+ GET / 200 in 79ms (compile: 3ms, proxy.ts: 7ms, render: 68ms)
+[90m05:54:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:54:08.510Z...[0m
+[90m05:54:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:54:38.512Z...[0m
+[90m05:55:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:55:08.513Z...[0m
+[90m05:55:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:55:38.515Z...[0m
+[90m05:56:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:56:08.516Z...[0m
+[90m05:56:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:56:38.519Z...[0m
+[90m05:57:08[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:57:08.522Z...[0m
+[90m05:57:38[0m [45m[37m[1m DBG  [0m [1m[36m[Scheduler][0m [2mChecking for messages due before 2026-10-18T05:57:38.524Z...[0m
