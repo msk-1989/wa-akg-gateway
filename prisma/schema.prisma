@@ -1,6 +1,3 @@
-// This is your Prisma schema file — adapted for SQLite
-// Originally from WA-AKG (MySQL), converted to SQLite for sandbox deployment
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,19 +7,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// NOTE: SQLite doesn't support enums, so all enum fields are now String with default values.
-// SQLite doesn't support @db.Text or Json — all converted to String.
-
 model User {
   id        String   @id @default(cuid())
   name      String?
   email     String   @unique
   password  String
-  role      String   @default("OWNER") // SUPERADMIN | OWNER | STAFF
+  role      String   @default("OWNER")
   apiKey    String?  @unique
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
   sessions        Session[]
   webhooks        Webhook[]
   notifications   Notification[]
@@ -39,7 +32,6 @@ model Session {
   config    Json?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
   user              User              @relation(fields: [userId], references: [id], onDelete: Cascade)
   contacts          Contact[]
   messages          Message[]
@@ -65,10 +57,8 @@ model Contact {
   data         Json?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
-
   session  Session   @relation(fields: [sessionId], references: [id], onDelete: Cascade)
   messages Message[]
-
   @@unique([sessionId, jid])
 }
 
@@ -89,10 +79,8 @@ model Message {
   contactId  String?
   contact    Contact? @relation(fields: [contactId], references: [id])
   session    Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
-
   @@unique([sessionId, keyId])
   @@index([sessionId, remoteJid])
-  @@index([sessionId, remoteJid, timestamp])
 }
 
 model Group {
@@ -112,9 +100,7 @@ model Group {
   linkedParentJid  String?
   createdAt        DateTime  @default(now())
   updatedAt        DateTime  @updatedAt
-
   session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
-
   @@unique([sessionId, jid])
 }
 
@@ -129,7 +115,6 @@ model AutoReply {
   mediaType   String?
   triggerType String   @default("ALL")
   createdAt   DateTime @default(now())
-
   session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
 }
 
@@ -142,7 +127,6 @@ model Story {
   type      String
   timestamp DateTime @default(now())
   viewed    Boolean  @default(false)
-
   session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
 }
 
@@ -158,7 +142,6 @@ model ScheduledMessage {
   recurrenceRule  String?
   status          String   @default("PENDING")
   createdAt       DateTime @default(now())
-
   session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
 }
 
@@ -167,7 +150,6 @@ model AuthState {
   sessionId String
   key       String
   value     Json
-
   @@unique([sessionId, key])
 }
 
@@ -182,7 +164,6 @@ model Webhook {
   isActive  Boolean  @default(true)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
   user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
   session Session?     @relation(fields: [sessionId], references: [id], onDelete: Cascade)
   logs    WebhookLog[]
@@ -201,42 +182,38 @@ model WebhookLog {
   responseTimeMs     Int?
   errorMessage       String?
   createdAt          DateTime @default(now())
-
   webhook Webhook @relation(fields: [webhookId], references: [id], onDelete: Cascade)
-
   @@index([webhookId])
-  @@index([webhookId, createdAt])
 }
 
 model BotConfig {
-  id                  String   @id @default(cuid())
-  sessionId           String   @unique
-  enabled             Boolean  @default(true)
-  botName             String   @default("WA-AKG Bot")
-  botMode             String   @default("OWNER")
-  botAllowedJids      Json?
-  botBlockedJids      Json?
-  autoReplyMode       String   @default("ALL")
+  id                   String    @id @default(cuid())
+  sessionId            String    @unique
+  enabled              Boolean   @default(true)
+  botName              String    @default("WA-AKG Bot")
+  botMode              String    @default("OWNER")
+  botAllowedJids       Json?
+  botBlockedJids       Json?
+  autoReplyMode        String    @default("ALL")
   autoReplyAllowedJids Json?
   autoReplyBlockedJids Json?
-  enableSticker       Boolean  @default(true)
-  enableVideoSticker  Boolean  @default(true)
-  maxStickerDuration  Int      @default(10)
-  enablePing          Boolean  @default(true)
-  enableUptime        Boolean  @default(true)
-  removeBgApiKey      String?
-  prefix              String   @default("#")
-  antiSpamEnabled     Boolean  @default(false)
-  spamLimit           Int      @default(5)
-  spamInterval        Int      @default(10)
-  spamDelayMin        Int      @default(1000)
-  spamDelayMax        Int      @default(3000)
-  welcomeMessage      String?
-  autoRead            Boolean  @default(false)
-  alwaysOnline        Boolean  @default(false)
-  createdAt           DateTime @default(now())
-  updatedAt           DateTime @updatedAt
-
+  enableSticker        Boolean   @default(true)
+  enableVideoSticker   Boolean   @default(true)
+  maxStickerDuration   Int       @default(10)
+  enablePing           Boolean   @default(true)
+  enableUptime         Boolean   @default(true)
+  removeBgApiKey       String?
+  prefix               String    @default("#")
+  antiSpamEnabled      Boolean   @default(false)
+  spamLimit            Int       @default(5)
+  spamInterval         Int       @default(10)
+  spamDelayMin         Int       @default(1000)
+  spamDelayMax         Int       @default(3000)
+  welcomeMessage       String?
+  autoRead             Boolean   @default(false)
+  alwaysOnline         Boolean   @default(false)
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
   session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
 }
 
@@ -258,11 +235,8 @@ model Label {
   colorHex  String      @default("#FF0000")
   createdAt DateTime    @default(now())
   updatedAt DateTime    @updatedAt
-
   chatLabels ChatLabel[]
-
   @@unique([sessionId, name])
-  @@index([sessionId])
 }
 
 model ChatLabel {
@@ -270,12 +244,8 @@ model ChatLabel {
   labelId   String
   chatJid   String
   createdAt DateTime @default(now())
-
   label Label @relation(fields: [labelId], references: [id], onDelete: Cascade)
-
   @@unique([labelId, chatJid])
-  @@index([chatJid])
-  @@index([labelId])
 }
 
 model Notification {
@@ -287,7 +257,6 @@ model Notification {
   read      Boolean  @default(false)
   href      String?
   createdAt DateTime @default(now())
-
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
@@ -296,13 +265,9 @@ model SessionAccess {
   sessionId String
   userId    String
   createdAt DateTime @default(now())
-
   session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade)
   user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
-
   @@unique([sessionId, userId])
-  @@index([userId])
-  @@index([sessionId])
 }
 
 model BroadcastLog {
@@ -316,11 +281,8 @@ model BroadcastLog {
   delay       Int                 @default(2000)
   startedAt   DateTime            @default(now())
   completedAt DateTime?
-
   recipients BroadcastRecipient[]
-
   @@index([sessionId])
-  @@index([sessionId, startedAt])
 }
 
 model BroadcastRecipient {
@@ -330,8 +292,6 @@ model BroadcastRecipient {
   status         String   @default("pending")
   error          String?
   sentAt         DateTime?
-
   broadcastLog BroadcastLog @relation(fields: [broadcastLogId], references: [id], onDelete: Cascade)
-
   @@index([broadcastLogId])
 }
