@@ -15,24 +15,9 @@ const P = require("pino");
 
 const PORT = process.env.PORT || 3000;
 const AUTH_DIR = "/tmp/wa_auth";
-const DATA_FILE = "/tmp/wa_data.json";
+const API_KEY = process.env.WA_API_KEY || "wag_715161238df6a2c9f969b3f39836060c";
 
 if (!fs.existsSync(AUTH_DIR)) fs.mkdirSync(AUTH_DIR, { recursive: true });
-
-// Simple data store (JSON file in /tmp — survives most restarts on Render)
-function loadData() {
-  try { return JSON.parse(fs.readFileSync(DATA_FILE, "utf8")); } catch { return { apiKey: null, sessions: {} }; }
-}
-function saveData(data) {
-  try { fs.writeFileSync(DATA_FILE, JSON.stringify(data)); } catch {}
-}
-
-// Generate API key on first run
-let data = loadData();
-if (!data.apiKey) {
-  data.apiKey = "wag_" + crypto.randomBytes(16).toString("hex");
-  saveData(data);
-}
 
 // Session state
 let waSocket = null;
@@ -125,7 +110,7 @@ const server = http.createServer(async (req, res) => {
 
   // API key auth check
   const apiKey = req.headers["x-api-key"];
-  const authed = apiKey === data.apiKey;
+  const authed = apiKey === API_KEY;
 
   // Get QR code
   if (url.pathname === "/api/qr" && req.method === "GET") {
@@ -150,7 +135,7 @@ const server = http.createServer(async (req, res) => {
   if (url.pathname === "/api/status" && req.method === "GET") {
     if (!authed) { res.writeHead(401); res.end('{"error":"unauthorized"}'); return; }
     res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(JSON.stringify({ status: waStatus, phone: waPhone, apiKey: data.apiKey }));
+    res.end(JSON.stringify({ status: waStatus, phone: waPhone, apiKey: API_KEY }));
     return;
   }
 
@@ -251,7 +236,7 @@ img{width:280px;height:280px;border-radius:12px;background:#fff;padding:8px;marg
 <div id="login"><h2>Enter API key</h2>
 <input id="key" placeholder="wag_..." type="password">
 <button onclick="login()">Connect</button>
-<p class="s">Key: ${data.apiKey}</p>
+<p class="s">Key: ${API_KEY}</p>
 </div>
 <div id="qr" class="h"><h2>Scan with WhatsApp</h2>
 <p class="s">Settings → Linked Devices → Link a Device</p>
@@ -306,5 +291,5 @@ async function reset(){
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`⚡ multinex WA API on port ${PORT}`);
-  console.log(`📋 API Key: ${data.apiKey}`);
+  console.log(`📋 API Key: ${API_KEY}`);
 });
