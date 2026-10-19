@@ -1,6 +1,7 @@
 // Pure Express API server for multinex POS WhatsApp bill sending
 // No Next.js, no React — just API + simple QR page
 // Memory: ~120MB (fits Render Free 512MB)
+// Auth state stored in DB (Neon) — survives Render restarts
 
 import express from "express";
 import { PrismaClient } from "@prisma/client";
@@ -20,25 +21,137 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// ===== Auth State (file-based, simple) =====
-const AUTH_DIR = path.join(process.cwd(), "auth_state");
-if (!fs.existsSync(AUTH_DIR)) fs.mkdirSync(AUTH_DIR, { recursive: true });
+// ===== Database-backed Auth State (survives Render restarts) =====
+// Custom auth state that stores credentials in PostgreSQL (Neon)
+// instead of filesystem (which is ephemeral on Render free tier)
+
+import { BufferJSON } from "@whiskeysockets/baileys";
+
+// We'll use a simple key-value table in the DB for auth state
+// Create it on first use
+async function ensureAuthStateTable() {
+  try {
+    await prisma.$executeRawUnsafe(`
+      CREATE TABLE IF NOT EXISTS "AuthState" (
+        "sessionId" TEXT NOT NULL,
+        "key" TEXT NOT NULL,
+        "value" TEXT NOT NULL,
+        PRIMARY KEY ("sessionId", "key")
+      )
+    `);
+  } catch (e) {
+    console.error("[Auth] Failed to create AuthState table:", e.message);
+  }
+}
+
+async function getDBAuthState(sessionId) {
+  await ensureAuthStateTable();
+
+  // Try to load existing creds
+  let creds = null;
+  try {
+    const rows = await prisma.$queryRawUnsafe(
+      `SELECT value FROM "AuthState" WHERE "sessionId" = $1 AND key = 'creds'`,
+      sessionId
+    );
+    if (rows && rows.length > 0) {
+      creds = JSON.parse(rows[0].value, BufferJSON.reviver);
+    }
+  } catch {}
+
+  if (!creds) {
+    // Generate new creds
+    const { initAuthCreds } = await import("@whiskeysockets/baileys");
+    creds = initAuthCreds();
+  }
+
+  const saveCreds = async () => {
+    try {
+      const serialized = JSON.stringify(creds, BufferJSON.replacer);
+      await prisma.$executeRawUnsafe(
+        `INSERT INTO "AuthState" ("sessionId", "key", "value") VALUES ($1, 'creds', $2)
+         ON CONFLICT ("sessionId", "key") DO UPDATE SET "value" = $2`,
+        sessionId, serialized
+      );
+    } catch (e) {
+      console.error("[Auth] Failed to save creds:", e.message);
+    }
+  };
+
+  const state = {
+    creds,
+    keys: {
+      get: async (type, ids) => {
+        const data = {};
+        for (const id of ids) {
+          try {
+            const rows = await prisma.$queryRawUnsafe(
+              `SELECT value FROM "AuthState" WHERE "sessionId" = $1 AND key = $2`,
+              sessionId, `${type}-${id}`
+            );
+            if (rows && rows.length > 0) {
+              let value = JSON.parse(rows[0].value, BufferJSON.reviver);
+              if (type === "app-state-sync-key" && value) {
+                value = value?.data ? value : { data: value, level: 1 };
+              }
+              data[id] = value;
+            }
+          } catch {}
+        }
+        return data;
+      },
+      set: async (data) => {
+        for (const category in data || {}) {
+          for (const id in data[category]) {
+            const value = data[category][id];
+            const key = `${category}-${id}`;
+            try {
+              if (value) {
+                const serialized = JSON.stringify(value, BufferJSON.replacer);
+                await prisma.$executeRawUnsafe(
+                  `INSERT INTO "AuthState" ("sessionId", "key", "value") VALUES ($1, $2, $3)
+                   ON CONFLICT ("sessionId", "key") DO UPDATE SET "value" = $3`,
+                  sessionId, key, serialized
+                );
+              } else {
+                await prisma.$executeRawUnsafe(
+                  `DELETE FROM "AuthState" WHERE "sessionId" = $1 AND key = $2`,
+                  sessionId, key
+                );
+              }
+            } catch {}
+          }
+        }
+      },
+    },
+  };
+
+  return { state, saveCreds };
+}
+
+async function clearDBAuthState(sessionId) {
+  try {
+    await prisma.$executeRawUnsafe(
+      `DELETE FROM "AuthState" WHERE "sessionId" = $1`,
+      sessionId
+    );
+  } catch (e) {
+    console.error("[Auth] Failed to clear auth state:", e.message);
+  }
+}
 
 // ===== WhatsApp Session Manager =====
 const sessions = new Map(); // sessionId -> { socket, status, qr, phone }
 
 async function startSession(sessionId) {
   if (sessions.has(sessionId) && sessions.get(sessionId).socket) return;
-  
-  const sessionAuthDir = path.join(AUTH_DIR, sessionId);
-  if (!fs.existsSync(sessionAuthDir)) fs.mkdirSync(sessionAuthDir, { recursive: true });
-  
-  const { state, saveCreds } = await useMultiFileAuthState(sessionAuthDir);
+
+  const { state, saveCreds } = await getDBAuthState(sessionId);
   const { version } = await fetchLatestBaileysVersion();
-  
+
   const runtime = { socket: null, status: "CONNECTING", qr: null, phone: null };
   sessions.set(sessionId, runtime);
-  
+
   const sock = makeWASocket({
     version,
     logger,
@@ -48,7 +161,7 @@ async function startSession(sessionId) {
     browser: ["multinex-pos", "Chrome", "1.0.0"],
   });
   runtime.socket = sock;
-  
+
   sock.ev.on("creds.update", saveCreds);
   
   sock.ev.on("connection.update", async (update) => {
@@ -94,7 +207,7 @@ async function startSession(sessionId) {
         setTimeout(() => startSession(sessionId), 2000);
       } else {
         // Logged out — clear auth
-        fs.rmSync(sessionAuthDir, { recursive: true, force: true });
+        await clearDBAuthState(sessionId);
         sessions.delete(sessionId);
       }
     }
@@ -216,9 +329,9 @@ app.patch("/api/sessions/:sessionId", requireAuth, async (req, res) => {
     sessions.delete(sessionId);
     
     // Clear auth state directory for fresh QR
-    const sessionAuthDir = path.join(AUTH_DIR, sessionId);
-    if (fs.existsSync(sessionAuthDir)) {
-      fs.rmSync(sessionAuthDir, { recursive: true, force: true });
+    
+    if (true) {
+      await clearDBAuthState(sessionId);
     }
     
     await prisma.session.update({ where: { sessionId }, data: { status: "STOPPED", qr: null } });
@@ -248,9 +361,9 @@ app.patch("/api/sessions/:sessionId", requireAuth, async (req, res) => {
     sessions.delete(sessionId);
     
     // Clear auth state
-    const sessionAuthDir = path.join(AUTH_DIR, sessionId);
-    if (fs.existsSync(sessionAuthDir)) {
-      fs.rmSync(sessionAuthDir, { recursive: true, force: true });
+    
+    if (true) {
+      await clearDBAuthState(sessionId);
     }
     
     // Delete from DB
@@ -273,9 +386,9 @@ app.delete("/api/sessions/:sessionId", requireAuth, async (req, res) => {
   }
   sessions.delete(sessionId);
   
-  const sessionAuthDir = path.join(AUTH_DIR, sessionId);
-  if (fs.existsSync(sessionAuthDir)) {
-    fs.rmSync(sessionAuthDir, { recursive: true, force: true });
+  
+  if (true) {
+    await clearDBAuthState(sessionId);
   }
   
   try { await prisma.message.deleteMany({ where: { sessionId } }); } catch {}
