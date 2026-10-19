@@ -157,16 +157,25 @@ const server = http.createServer(async (req, res) => {
   // Send message
   if (url.pathname.startsWith("/api/send/") && req.method === "POST") {
     if (!authed) { res.writeHead(401); res.end('{"error":"unauthorized"}'); return; }
-    if (!waSocket || waStatus !== "CONNECTED") {
-      res.writeHead(503, { "Content-Type": "application/json" });
-      res.end(JSON.stringify({ error: "WhatsApp not connected", status: waStatus }));
-      return;
-    }
 
     let body = "";
     req.on("data", chunk => body += chunk);
     req.on("end", async () => {
       try {
+        // Wait for connection if currently reconnecting (up to 15 seconds)
+        if (waStatus !== "CONNECTED") {
+          for (let i = 0; i < 30; i++) {
+            if (waStatus === "CONNECTED" && waSocket) break;
+            await new Promise(r => setTimeout(r, 500));
+          }
+        }
+
+        if (!waSocket || waStatus !== "CONNECTED") {
+          res.writeHead(503, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ error: "WhatsApp not connected", status: waStatus }));
+          return;
+        }
+
         const { message, phone } = JSON.parse(body);
         const jid = phone.includes("@") ? phone : `${phone}@s.whatsapp.net`;
 
