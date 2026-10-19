@@ -1,0 +1,14 @@
+{
+  "name": "multinex-wa-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node minimal.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "@hapi/boom": "^10.0.1",
+    "pino": "^10.1.0",
+    "qrcode": "^1.5.4"
+  }
+}
